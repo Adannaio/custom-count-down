@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inconsolata&family=Nanum+Gothic&display=swap');
+
+
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.container{
+    width: 580px;
+    height: 394px;
+    color: black;
+    margin: 30px auto;
+    padding: 25px 50px;
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    background-color:  #2596BE;
+}
+
+.input-container {
+    position: relative;
+    top: 20px;
+}
+
+.input-container p{
+    font-size: 2rem;
+    color: white;
+}
+
+/* Form */
+.form {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+label {
+    font-weight: bold;
+    margin-left: 10px;
+    color: blanchedalmond;
+}
+  
+input {
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/* Button */
+button {
+    width: 95%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    text-transform: uppercase;
+    background: #006959;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+button:hover{
+    filter: brightness(110%);
+}
+
+/* Countdown */
+.countdown{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+ul {
+    margin-left: -25px;
+}
+  
+li {
+    display: inline-block;
+    font-size: 10px;
+    list-style-type: none;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+li span {
+    display: block;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Complete */
+.complete {
+    position: relative;
+    top: 60px;
+    color: white;
+    display: none;
+}
+
+.complete p{
+    font-size: 15px;
+}
+
+.complete-title{
+    animation: complete 4s infinite;
+}
+
+@keyframes complete {
+    0%{
+        color: rgb(235, 66, 15);
+    }
+    25%{
+        color: rgb(233, 211, 13);
+    }
+    50%{
+        color: rgb(64, 233, 13);
+        transform: scale(1.5);
+    }
+    75%{
+        color: rgb(0, 38, 253);
+    }
+    100%{
+        color: rgb(184, 0, 253);
+    }
+}
+
+    
+/* Media queries */
+@media screen and (max-width:600px) {
+    .container{
+        min-width: unset;
+        width: 95vw;
+        min-height: 245px;
+        padding: 20px;
+        margin: 10px;
+        margin: 190px auto;
+    }
+
+    .input-container {
+        top: unset;
+    }
+    
+    .countdown {
+        position: relative;
+        top: 10px;
+    }
+    
+    .form {
+        width: unset;
+    }
+    
+    input {
+        width: 93%;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    li span {
+        font-size: 30px;
+    }
+
+    .complete{
+        position: relative;
+        top: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+}
+
+
