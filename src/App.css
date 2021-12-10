@@ -13,202 +13,71 @@ body{
     font-family: 'Comfortaa', cursive;
 }
 
-
 .container{
-    width: 580px;
-    height: 394px;
-    color: black;
-    margin: 30px auto;
-    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF5733 ;
+    width: 500px;
+    margin: 70px auto;
+    color: cornsilk;
+    padding: 20px;
     border-radius: 5px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    background-color:  #2596BE;
 }
 
-.input-container {
-    position: relative;
-    top: 20px;
+button{
+    margin: 10px;
 }
 
-.input-container p{
-    font-size: 2rem;
-    color: white;
-}
-
-/* Form */
-.form {
-    width: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-  
-label {
-    font-weight: bold;
-    margin-left: 10px;
-    color: blanchedalmond;
-}
-  
-input {
-    width: 95%;
-    margin-top: 5px;
-    margin-bottom: 20px;
+select{
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background: #fff;
-    outline: none;
-    font-family: 'Comfortaa', cursive;
-}
-
-
-/* Button */
-button {
-    width: 95%;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 15px;
     border: none;
-    text-transform: uppercase;
-    background: #006959;
-    color: white;
-    cursor: pointer;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    font-family:'Comfortaa', cursive ;
+    margin-bottom: 20px;
+}
+
+select:focus{
     outline: none;
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
 }
 
-button:hover{
-    filter: brightness(110%);
+input[type = 'range']{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #C70039 ;
+    cursor:move;
 }
 
-/* Countdown */
-.countdown{
-    color: white;
+textarea{
+    width: 300px;
+    height:150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-family:'Comfortaa', cursive ;
+    margin-bottom: 10px;
+}
+
+.button-group{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
+    flex-direction: row;
 }
 
-p{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
-ul {
-    margin-left: -25px;
-}
-  
-li {
-    display: inline-block;
-    font-size: 10px;
-    list-style-type: none;
-    padding: 15px;
-    text-transform: uppercase;
-    text-align: center;
-}
-  
-li span {
-    display: block;
-    font-size: 60px;
-    text-align: center;
-}
-
-/* Complete */
-.complete {
-    position: relative;
-    top: 60px;
+button{
+    background-color:#FFC300  ;
     color: white;
-    display: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family:'Comfortaa', cursive ;
+    font-weight: bold;
+    font-size: medium;
+    width: 140px;
 }
 
-.complete p{
-    font-size: 15px;
-}
-
-.complete-title{
-    animation: complete 4s infinite;
-}
-
-@keyframes complete {
-    0%{
-        color: rgb(235, 66, 15);
-    }
-    25%{
-        color: rgb(233, 211, 13);
-    }
-    50%{
-        color: rgb(64, 233, 13);
-        transform: scale(1.5);
-    }
-    75%{
-        color: rgb(0, 38, 253);
-    }
-    100%{
-        color: rgb(184, 0, 253);
-    }
-}
-
-    
-/* Media queries */
-@media screen and (max-width:600px) {
-    .container{
-        min-width: unset;
-        width: 95vw;
-        min-height: 245px;
-        padding: 20px;
-        margin: 10px;
-        margin: 190px auto;
-    }
-
-    .input-container {
-        top: unset;
-    }
-    
-    .countdown {
-        position: relative;
-        top: 10px;
-    }
-    
-    .form {
-        width: unset;
-    }
-    
-    input {
-        width: 93%;
-    }
-
-    ul{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    h1 {
-        font-size: 20px;
-    }
-
-    li {
-        font-size: 10px;
-    }
-
-    li span {
-        font-size: 30px;
-    }
-
-    .complete{
-        position: relative;
-        top: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        display: none;
-    }
-}
 
 

@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Countdown />
+    <SpeechToText />
   </div>
 </template>
 
 <script>
-import Countdown from './components/Countdown.vue';
+import SpeechToText from './components/SpeechToText.vue';
 
 export default {
   name: 'App',
   components: {
-    Countdown,
+    SpeechToText,
   },
 }
 </script>
